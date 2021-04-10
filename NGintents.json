@@ -1,0 +1,162 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Whats Up",
+           "Good Morning", "Good Afternoon", "Good Evening", "Howdy"],
+         "responses": [ "Good to see you, my man", "Hi there, how can I help?", "What's up?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "Adios",
+           "See ya", "Catch ya later"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "Huh?",
+           "Say again?"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help do you provide?", "How you can be helpful?", "What support is offered", "Help me", "Please Help", "Can you help me"],
+         "responses": ["I'm here to help you out with any of your COVID-19 related questions, ask whatever you'd like to know", "I can help, just ask any COVID-19 UMD related questions, ask whatever you'd like to know"],
+         "context": [""]
+        },
+        {"tag": "case_count_UMD",
+         "patterns": ["How many cases are at UMD", "How's UMD doing", "What're UMD's cases looking like" ],
+         "responses": ["Here is the link for the UMD COVID-19 Dashboard: https://umd.edu/covid-19-dashboard"],
+         "context": [""]
+        },
+	"tag": "weekly_case_count_UMD",
+         "patterns": ["How many cases are at UMD this week", "How's UMD doing this week", "What're UMD's cases looking like" ],
+         "responses": ["Here is the link for the UMD COVID-19 Dashboard: https://umd.edu/covid-19-dashboard"],
+         "context": [""]
+        },
+	{"tag": "weekly_case_count_PG",
+         "patterns": ["How many cases are in Prince George's County this week", "How's Prince George's doing this week", "How's PG doing this week", "What're PG's cases looking like this week" ],
+         "responses": ["Here is the link for the COVID-19 statistics in Prince George's County: https://www.arcgis.com/apps/MapSeries/index.html?appid=82fa5c47b1f542849ca6162ab1564453"],
+         "context": [""]
+        },
+        {"tag": "case_count_PG",
+         "patterns": ["How many cases are in Prince George's County", "How's Prince George's doing", "How's PG doing", "What're PG's cases looking like" ],
+         "responses": ["Here is the link for the COVID-19 statistics in Prince George's County: https://www.arcgis.com/apps/MapSeries/index.html?appid=82fa5c47b1f542849ca6162ab1564453"],
+         "context": [""]
+        },
+	{"tag": "deaths_count_PG",
+         "patterns": ["How many deaths are in Prince George's County", "How's Prince George's doing", "How's PG doing", "What're PG's deaths looking like" ],
+         "responses": ["Here is the link for the COVID-19 statistics in Prince George's County: https://www.arcgis.com/apps/MapSeries/index.html?appid=82fa5c47b1f542849ca6162ab1564453"],
+         "context": [""]
+        },
+	{"tag": "case_count_MD",
+         "patterns": ["How many cases are in Maryland", "How's Maryland doing", "How's MD doing", "What're MD's cases looking like", "How many people have tested positive in Maryland?"],
+         "responses": ["Here is the link for the COVID-19 statistics in Maryland: https://coronavirus.maryland.gov/"],
+         "context": [""]
+        },
+	{"tag": "weekly_case_count_MD",
+         "patterns": ["How many cases are in Maryland this week", "How's Maryland doing this week", "How's MD doing this week", "What're MD's cases looking like this week", "How many people have tested positive in Maryland this week?"],
+         "responses": ["Here is the link for the COVID-19 statistics in Maryland: https://coronavirus.maryland.gov/"],
+         "context": [""]
+        },
+	{"tag": "deaths_count_MD",
+         "patterns": ["How many deaths are in Maryland", "How's Maryland doing", "How's MD doing", "What're MD's deaths looking like", "How many people have died in Maryland?" ],
+         "responses": ["Here is the link for the COVID-19 statistics in Maryland: https://coronavirus.maryland.gov/"],
+         "context": [""]
+        },
+	{"tag": "case_count_US",
+         "patterns": ["How many cases are in the United States", "How many cases are in the US", "How many cases are in the USA", "How's the United States doing", "How's the USA doing", "How's the US doing", "What're the US' cases looking like" ],
+         "responses": ["Here is the link for the COVID-19 statistics in the United States: https://covid.cdc.gov/covid-data-tracker/?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-updates%2Fcases-in-us.html#cases_casesper100klast7days"],
+         "context": [""]
+        },
+	{"tag": "weekly_case_count_US",
+         "patterns": ["How many cases are in the United States this week", "How many cases are in the US this week", "How many cases are in the USA this week", "How's the United States doing this week", "How's the USA doing this week", "How's the US doing this week", "What're the US' cases looking like this week" ],
+         "responses": ["Here is the link for the COVID-19 statistics in the United States: https://covid.cdc.gov/covid-data-tracker/?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-updates%2Fcases-in-us.html#cases_casesper100klast7days"],
+         "context": [""]
+        },
+	{"tag": "death_count_US",
+         "patterns": ["How many deaths are in the United States", "How many deaths are in the US", "How many deaths are in the USA", "How's the United States doing", "How's the USA doing", "How's the US doing", "What're the US' deaths looking like" ],
+         "responses": ["Here is the link for the COVID-19 statistics in the United States: https://covid.cdc.gov/covid-data-tracker/?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-updates%2Fcases-in-us.html#cases_casesper100klast7days"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search_local",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy"],
+         "responses": ["Here's a Google "],
+         "context": ["search_pharmacy_by_name"]
+        },
+	"tag": "pharmacy_search_alll",
+         "patterns": ["Show me all pharmacies in the College Park area"],
+         "responses": ["Here's a map showing pharmacies in the College Park area: https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1MWh92H84qTSCIjM8QsSNxbHoHVtXvrQ6&ll=38.98693881768202%2C-76.93732022307972&z=14 "],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_params",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_name",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+	{"tag": "vaccination_search",
+         "patterns": ["Lookup for vaccination", "Searching for open vaccination places", "I want to search vaccination spots", "Where can I get a vaccine", "How can I get a vaccine", "How far is it to the nearest vaccination location" ],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+	{"tag": "vaccination_search_by_name",
+         "patterns": [],
+         "responses": ["Please provide vaccination location"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+	{"tag": "vaccination_search",
+         "patterns": ["Lookup for vaccination", "Searching for open vaccination places", "I want to search vaccination spots", "Where can I get a vaccine", "How can I get a vaccine", "How far is it to the nearest vaccination location" ],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+	{"tag": "mass_vaccination_search",
+         "patterns": ["Lookup for mass vaccinations", "Lookup for drive-through vaccinations","Searching for open mass vaccination places", "I want to search mass vaccination spots", "Where can I get a vaccine", "How can I get a vaccine", "How far is it to the nearest mass-vaccination location" ],
+         "responses": ["Here are the mass vaccine locations nearest to you"],
+         "context": ["search_mass_vaccine_location_by_params"]
+	},
+	{"tag": "vaccine_comparison",
+         "patterns": ["What vaccine should I get", "How long does it take each vaccine to work","What are the side effects of the vaccine", "Which vaccine is best", "Which vaccine is most effective", "How safe is each vaccine", "What are the downsides to being vaccinated" ],
+         "responses": ["Here's some information reagarding each vaccine"],
+         "context": ["search_vaccine_comparison_by_params"]
+	},
+	{"tag": "vaccine_availability_UMD",
+         "patterns": ["Lookup for vaccination at UMD", "Searching for open vaccination appointments at UMD", "How many vaccines does Maryland have", "Where can I get a vaccine at UMD", "How can I get a vaccine at UMD", "How do I sign up for a vaccine at UMD" ],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+	{"tag": "testing_availability_UMD",
+         "patterns": ["Lookup for testing at UMD", "Searching for open testing appointments at UMD", "Where can I get tested at UMD", "How can I get a test at UMD", "How do I sign up for a test at UMD", "Where can I get tested at the University of Maryland", "How do I sign up for a test at the University of Maryland"],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+	{"tag": "COVID_symptoms",
+         "patterns": ["Show me a list of symptoms of COVID-19", "Show me COVID symptoms", "Is coughing a symptom of COVID-19?", "Is vomiting a symptom of COVID-19?", "Are fevers a symptom of COVID-19?", "Is sneezing a symptom of COVID-19?"],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	},
+
+	{"tag": "COVID_symptoms_checker",
+         "patterns": ["Do I have the Coronavirus?", "Do I have COVID-19", "Show me the COVID symptom checker"],
+         "responses": ["Here are the vaccine locations nearest to you"],
+         "context": ["search_vaccine_location_by_params"]
+	}
+   ]
+}
