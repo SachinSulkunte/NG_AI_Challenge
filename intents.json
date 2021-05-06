@@ -1,0 +1,47 @@
+{"intents": [
+        {"tag": "greetings",
+         "patterns": ["Hi there", "How are you", "What's up", "Hey", "Hello", "Good morning"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?", "What can I do for you today?"]
+        },
+        {"tag": "goodbyes",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you", "see ya"],
+         "responses": ["See you!", "Have a nice day!", "Bye! Come back again soon."]
+        },
+        {"tag": "purpose",
+         "patterns": ["Who are you?", "What is your purpose?", "What is your name?"],
+         "responses": ["I am Neural-19, a Covid-19 inspired AI chatbot meant to help out on college campuses!"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "That's what I'm here for!", "Any time!", "My pleasure, is there anything else I can do for you?"]
+        },
+        {"tag": "unsure",
+         "patterns": [],
+         "responses": ["Sorry, I don't understand", "Please give me more info", "Not sure I understand", "Please try asking your question differently"]
+        },
+        {"tag": "covid",
+         "patterns": ["What is Covid-19", "what is corona virus", "More information about the virus"],
+         "responses": ["Here's some useful information about Covid-19:"]
+        },
+        {"tag": "masks",
+         "patterns": ["Should I wear a mask?", "Do masks actually help?", "Do i need to wear a mask?"],
+         "responses": ["Give me a second to look up current UMD mask policies:"]
+        },
+        {"tag": "implementation",
+         "patterns": ["How do you work?", "What is a chatbot?", "How were you built?"],
+         "responses": ["I was built using Python, Natural Language Processing, Machine Learning, and Computer Vision", "I learned to understand human speech from a supervised learning model and utilize a neural network to respond to user input."]
+        },
+        {"tag": "options",
+         "patterns": ["How can you help me?", "What can you do?", "What do you do?", "List options"],
+         "responses": ["I can help you find a Covid-19 testing site, tell you about campus mask policy, or tell you about Covid-19!"]
+        },
+        {"tag": "terminate",
+         "patterns": ["Turn off", "I'm done", "Terminate program"],
+         "responses": ["Terminating program"]
+        },
+        {"tag": "testing_site",
+         "patterns": ["Find me a testing site nearby", "Find testing location", "List of testing sites", "Locate a testing site", "Search for testing site"],
+         "responses": ["Sure thing! Here are some options: "]
+        }
+   ]
+}
